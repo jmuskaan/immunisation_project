@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+     <style>
+       body{
+	background-image: url("https://www.optimecare.com/wp-content/uploads/2016/06/medical-background.png");
+}
+img{
+    height: 180 px;
+    width: 180px;
+}
+#defn{
+    color:rgb(71, 63, 225);
+    font-size: 35px;
+    padding: 20px 20px 20px 20px;
+    border-left: 5px solid  rgb(15, 92, 216);
+	border-right: 5px solid rgb(15, 92, 216);
+	border-bottom : 5px solid rgb(15, 92, 216);
+} 
+#imgs{
+	margin:1.66%;
+    padding: 20px 20px 20px 100px;
+    border-left: 5px solid rgb(15, 92, 216);
+	border-right: 5px solid  rgb(15, 92, 216);
+	border-top : 5px solid  rgb(15, 92, 216);
+}
+.navbar-default{
+	background-color:rgba(67, 97, 145, 0.9);
+	/*font-family: Montserrat;
+	color:white;*/
+}
+     </style>
+</head>
+<body>
+    
+    <!-- DEFAULT NAVBAR-->
+	<nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active" id="login"><a href="#">Hello, user!<span class="sr-only">(current)</span></a></li>
+              
+              
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href='http://localhost:8800/login2'id="sign"><font color="white">Log Out</font></a></li>
+              
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      
+      <!--END OF NAVBAR-->
+
+    <table id="options" align="center" style="background-color: white;">
+            <tr id="options-row">
+                        <td id="imgs"><a href='http://localhost:8800/project_height_weight.html'><img style="width:170px;height:170px; "src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPcF53NPfPw6imI6GFy02mYwAOGBtudkMu--TcvvxJZgjaqpgCA
+
+                          "></a></td>
+                        <td id="imgs"><img src="https://static1.squarespace.com/static/5a7adf55f6576ee0160b5a58/t/5b4fb3ab2b6a2853e2b5f95a/1522751203672/syringe.png"></td>
+                    </tr>
+            
+        <tr id="options-row">
+            <td id="defn"><a href='http://localhost:8800/project_height_weight.html'>Height-Weight Chart</a></td>
+            <td id="defn"><a href="http://localhost:8800/vaccine.html">Vaccination Schedule</a></td>
+        </tr>
+        <tr id="options-row">
+                <td id="imgs"><a href="http://localhost:8800/project_dietplan.html"><img src="https://cdn4.vectorstock.com/i/1000x1000/13/43/baby-food-icon-cartoon-isometric-3d-style-vector-16911343.jpg"></a></td>
+                <td id="imgs"><a href="http://localhost:8800/project_doctors.html"><img src="https://cdn4.iconfinder.com/data/icons/flat-medical/150/female-doctor-512.png"></a></td>
+
+            </tr>
+        <tr id="options-row">
+            <td id="defn"><a href="http://localhost:8800/project_dietplan.html">Diet Plan for your child</a></td>
+            <td id="defn"><a href="http://localhost:8800/project_doctors.html">Paedetrician near me</a></td>
+    </tr>
+    </table>
+</body>
+</html>

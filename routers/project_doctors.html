@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PaediaHealth-Book Your Appointment</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Code+Pro:700" rel="stylesheet">
+  <style>
+    html{
+  font-family: Montserrat;
+}
+
+body{
+  background-image: url("https://www.optimecare.com/wp-content/uploads/2016/06/medical-background.png");
+}
+
+h1{
+  margin-left: 30%;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 30px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin:30px;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: rgb(85, 209, 237);
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: rgb(10, 32, 66);
+  color: white;
+  transform: rotateY(180deg);
+}
+  </style>
+</head>
+<body>
+	<h1>Book An Appointment</h1>
+<table>
+	<tr>
+<td><div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>Dr. Anuj K. Goyal</h2>
+      <p>MBBS, MD - Pediatrics</p>
+<p>20 years experience</p>
+<p>Pediatrician</p>
+    </div>
+    <div class="flip-box-back">
+      <p><h4>Goyal Specialist Clinic</h4></p>
+      <p>Shop No-8, CSC-6, Behind Shakti Appartment, Sector-9, Rohini, Delhi</p>
+      <p>Fees per consultation- Rs.600</p>
+    </div>
+  </div>
+</div>
+</td>
+<td>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>Dr. Sapan Vinayak</h2>
+      <p>MBBS, Diploma in Child Health (DCH)</p>
+<p>17 years experience</p>
+<p>Pediatrician</p>
+
+    </div>
+    <div class="flip-box-back">
+      <p><h4>Dr. Sapan Vinayak Child & Eye HealthCare</h4><p>
+      	<p>House Number 1050, Corner House. Ground Floor, Sector-A, Pocket A, Landmark: Near Fortis Hospital Red Light, Delhi</p>
+      	<p>Fees per consultation- Rs.600</p>
+    </div>
+  </div>
+</div>
+</td>
+<td>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>Dr. Pawan Kumar</h2>
+      <p>MBBS, MD - Pediatrics</p>
+<p>18 years experience</p>
+<p>Pediatrician</p>
+    </div>
+    <div class="flip-box-back">
+      <p><h4>Fortis Flt. Lt. Rajan Dhall Hospital</h4></p>
+      <p>Sector B, Pocket 1, Aruna Asaf Ali Marg, Landmark: Opposite Kishangarh, Delhi</p>
+      <p>Fees per consultation- Rs.1000</p>
+    </div>
+  </div>
+</div>
+</td>
+</tr>
+<tr>
+	<td>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>Dr. Avinash Kulkarni</h2>
+      <p>MBBS, MD - Pediatrics, Diploma in Child Health (DCH), Diplomate of National Board Exam</p>
+
+<p>Pediatrician</p> 
+<p>38 Years Experience</p>
+    </div>
+    <div class="flip-box-back">
+      <p><h4>Kulkarni Pediatric clinic</h4></p>
+      <p>A - 4/25, Landmark: Jwala Heri Main Road, Delhi</p>
+      <p>Fees per consultation- Rs.1800</p>
+    </div>
+  </div>
+</div>
+</td>
+<td>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>Dr. Manu Agarwal</h2>
+      <p>MBBS, MD - Pediatrics, Post Doctoral Observership in Pediatric and Adolescent Endocrinology</p>
+<p>29 years experience</p>
+<p>Pediatrician</p>
+    </div>
+    <div class="flip-box-back">
+      <p><h4>Max Multi Speciality Centre - Panchsheel Park</h4></p>
+      <p>N-110, Panchsheel Park, Landmark: Near Panchsheel Club & Near Hauz Khas Metro Station, Delhi</p>
+      <p>Fees per consultation- Rs.1000</p>
+    </div>
+  </div>
+</div>
+</td>
+<td>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2>Dr. Sumita Chawla</h2>
+      <p>MBBS, MD - Pediatrics</p>
+<p>24 years experience</p>
+<p>Pediatrician</p>
+    </div>
+    <div class="flip-box-back">
+      <p><h4>Max Multi Speciality Centre - Panchsheel Park</h4></p>
+      <p>N-110, Panchsheel Park, Landmark: Near Panchsheel Club & Near Hauz Khas Metro Station, Delhi</p>
+      <p>Fees per consultation- Rs.1000</p>
+    </div>
+  </div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

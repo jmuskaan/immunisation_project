@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to PaediaHealth-Home Page</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Code+Pro:700" rel="stylesheet">
+	
+	<!-- Latest compiled and minified CSS -->
+	<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+  body{
+	margin:20px;
+	padding: 10px;
+	background-image: url("https://www.optimecare.com/wp-content/uploads/2016/06/medical-background.png");
+	font-family: Montserrat;
+	font-size: 20px;
+}
+
+h1{
+	font-family: Montserrat;
+	font-weight: 600px;
+	font-size: 50px;
+	margin-left: 80px;
+
+}
+.heading{
+	margin-left: 5px;
+	font-family: Montserrat;
+}
+
+#subheads{
+	color:rgb(206, 218, 237);
+	font-weight: 600px;
+}
+
+.content{
+	background-color: rgb(8, 23, 48);
+	font-family: Montserrat;
+	color:white;
+	padding: 15px 25px 15px 25px;
+}
+.navbar-default{
+	background-color:rgb(7, 16, 30,0.9);
+	font-family: Montserrat;
+	color:white;
+}
+
+#login{
+	background-color:rgb(7, 16, 30);
+}
+#ele{
+	width: 20%;
+	height: 40%;
+	margin:1.66%;
+	border-left: 5px solid rgb(44, 113, 142);
+	border-right: 5px solid rgb(44, 113, 142);
+	border-top : 5px solid rgb(44, 113, 142);
+
+
+	padding: 10px;
+}
+
+#main_icons{
+	background-color: white;
+}
+#data{
+	font-family: Montserrat;
+	font-size: 30px;
+	color: rgb(44, 113, 142);
+	margin-left: 80px;
+	border-left: 5px solid rgb(44, 113, 142);
+	border-right: 5px solid rgb(44, 113, 142);
+	border-bottom : 5px solid rgb(44, 113, 142);
+	padding: 10px;
+}
+img{
+	/*margin: auto auto auto auto;*/
+	margin-left: 70px;
+	height: 200px;
+	width:200px;
+}
+a:hover{
+	opacity: 0.2;
+}
+img:hover{
+	opacity: 0.5;
+}
+</style>
+
+</head>
+<body>
+
+    <!-- DEFAULT NAVBAR-->
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active" id="login"><a href="#">Login <span class="sr-only">(current)</span></a></li>
+        
+        
+      </ul>
+      <form class="navbar-form navbar-left" method="post" action="/login1" >
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Username" name="uname">
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Password" name="pwd">
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href='http://localhost:8800/signup2' id="sign"><font color="white">Sign Up</font></a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--NAVBAR ENDS-->
+<h1>Welcome to PaediaHealth</h1>
+<h1>Your in-house child immunization app!</h1>
+<table id="main_icons">
+	<tr id="main_row">
+		<td id="ele"><img src="https://cdn3.iconfinder.com/data/icons/medical-set-1-3/128/Medical_Kit_1_c-22-512.png"></td>
+		<td id="ele"><img src="https://st4.depositphotos.com/4177785/24169/v/1600/depositphotos_241698878-stock-illustration-vaccinations-list-color-icon-routine.jpg" alt="Image unable to load"></td>
+		<td id="ele"><img src="https://st3.depositphotos.com/8950810/17938/v/1600/depositphotos_179387204-stock-illustration-bacterial-microorganism-in-a-circle.jpg"></td>
+	</tr>
+	<tr id="row2">
+		<td id="data"><a href="#whyi">Why Immunisation?</a></td>
+		<td id="data"><a href="#kyv">Know Your Vaccines</a></td>
+		<td id="data"><a href="#pdi">Paediatric Illnesses</a></td>
+
+	</tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+	<!--CONTENT-->
+  <div class="content">
+  <h1 class="heading" id="whyi">Why Immunization?</h1>
+    <h3 id="subheads">Immunisation is important</h3>
+       <p class="para">
+        Immunisation saves lives. Immunisation is one of the best ways you can protect yourself, your children and 
+        future generations from infectious diseases. In other words, if you vaccinate, you 
+        help wipe out disease that could spread now and into the future.
+        <br>
+        By making sure you and your family are fully vaccinated, you are not only looking after your own family but also protecting vulnerable people in your community. 
+        And you are also helping to wipe out these infectious diseases altogether. That is, the more people who vaccinate, and thus the fewer people who are infected, 
+        the less widely can a disease spread.
+        <br>
+        </p>
+        <h3 id="subheads">So, how do vaccinations work?</h3>
+       <p class="para">All immunisations work in the same way. The vaccination uses your body’s immune system to increase protection to an infection before you come into contact with that infection. <br>In other words, it is like being infected by the disease without suffering the actual symptoms.
+        If you come into contact with an infection after you’ve been vaccinated, your body works to stop you from getting the disease, or you may get just a mild case. Unlike other proposed approaches to immunisation (such as homeopathy), vaccinations have been rigorously tested to demonstrate their safety and effectiveness in protecting against infections disease. 
+        </p>
+        <h3 id="subheads">
+            And what about people who cannot be immunised?
+        </h3>
+        <p class="para">Some people in our community cannot be vaccinated. This might be because they are too young or too sick. You can help protect these vulnerable people by keeping yours and your family’s vaccinations up to date. 
+           <br>
+         When enough people in the community are vaccinated, the spread of a disease slows down or stops completely. So as long as enough people are vaccinated, the disease will not spread. This is called herd immunity. 
+        </p>
+<br><br>
+<h1 class = "heading" id="kyv">Know your Vaccines</h1>
+<h3 id="subheads">BCG Vaccine</h3> <p class="para">BCG, or bacille Calmette-Guerin, is a vaccine for tuberculosis (TB) disease. Many foreign-born persons have been BCG-vaccinated. BCG is used in many countries with a high prevalence of TB to prevent childhood tuberculous meningitis and miliary disease. </p>
+<h3 id="subheads">DPT Vaccine</h3> <p class="para">DPT (also DTP and DTwP) is a class of combination vaccines against three infectious diseases in humans: diphtheria, pertussis (whooping cough), and tetanus. The vaccine components include diphtheria and tetanus toxoids and killed whole cells of the bacterium that causes pertussis </p>
+<h3 id="subheads">OPV Vaccine</h3> <p class="para">OPV consists of a mixture of live attenuated poliovirus strains of each of the three serotypes, selected by their ability to mimic the immune response following infection with wild polioviruses, but with a significantly reduced incidence of spreading to the central nervous system.</p>
+<h3 id="subheads">Hepatitis-A Vaccine</h3> <p class="para">Hepatitis A vaccine (Havrix, Vaqta) is used to prevent hepatitis A, a type of liver disease that is caused by the hepatitis A virus (HAV).Hepatitis A infection can be mild with no symptoms or a serious illness that can rarely cause liver failure and death. Getting vaccinated against the hepatitis A virus is the best way to prevent these problems.</p>
+<h3 id="subheads">Hepatitis-B Vaccine</h3> <p class="para">The hepatitis B vaccine is a safe and effective vaccine that is recommended for all infants at birth and for children up to 18 years. The hepatitis B vaccine is also recommended for adults living with diabetes and those at high risk for infection</p>
+<h3 id="subheads">Hi B Vaccine</h3> <p class="para">The Haemophilus influenzae type B vaccine, often called Hib vaccine, is a vaccine used to prevent Haemophilus influenzae type b (Hib) infection.</p>
+<h3 id="subheads">Measles Vaccine</h3> <p class="para">Measles vaccine is a vaccine that prevents measles.Nearly all of those who do not develop immunity after a single dose develop it after a second dose.</p>
+<h3 id="subheads">Pentavalent Vaccine</h3> <p class="para">Pentavalent vaccine protects against five major infections: diphtheria, tetanus, pertussis (whooping cough), hepatitis B and Haemophilus influenzae type b (Hib).</p>
+<h3 id="subheads">Chicken Pox Vaccine</h3> <p class="para">Chickenpox is a very contagious disease caused by the varicella-zoster virus (VZV). It causes a blister-like rash, itching, tiredness, and fever.</p>
+<h3 id="subheads">MMR Vaccine</h3> <p class="para">The MMR vaccine is a vaccine against measles, mumps, and rubella (German measles).The first dose is generally given to children around 9 to 15 months of age, with a second dose at 15 months to 6 years of age, with at least 4 weeks between the doses.</p>
+<h3 id="subheads">Typhoid Vaccine</h3> <p class="para">There are two vaccines to prevent typhoid. One is an inactivated (killed) vaccine gotten as a shot. The other is a live, attenuated (weakened) vaccine which is taken orally (by mouth).</p>
+
+<br>
+<h1 class="heading" id="pdi"> Paediatric Illnesses</h1>
+<p class="para">
+    All children deserve high-quality medical care. As a parent, it is important to be aware of the most up-to-date treatment guidelines so you can be sure your child is getting the best care possible. 
+</p>
+<h3 id="subheads">1. Sore Throat</h3> <p class="para">Sore throats are common in children and can be painful. However, a sore throat that is caused by a virus does not need antibiotics. In those cases, no specific medicine is required, and your child should get better in seven to ten days. In other cases, a sore throat could be caused by an infection called streptococcal (strep throat).
+</p>
+<h3 id="subheads">2. Ear Pain </h3><p class="para">Ear pain is common in children and can have many causes—including ear infection (otitis media), swimmer's ear (infection of the skin in the ear canal), pressure from a cold or sinus infection, teeth pain radiating up the jaw to the ear, and others.   
+</p>
+<h3 id="subheads">3. Skin Infection</h3> <p class="para">In most children with skin infections, a skin test (culture or swab) may be needed to determine the most-appropriate treatment. Tell your doctor if your child has a history of MRSA, staph infection, or other resistant bacteria or if he or she has been exposed to other family members or contacts with resistant bacteria.
+</p>
+<h3 id="subheads">4. Common Cold and Cough</h3> <p class="para">Colds are caused by viruses in the upper respiratory tract. Many young children—especially those in child care—can get 6 to 8 colds per year. Symptoms of a cold (including runny nose, congestion, and cough) may last for up to ten days.Coughs are usually caused by viruses and do not often require antibiotics.
+        Cough medicine is not recommended for children 4 years of age and younger, or for children 4 to 6 years of age unless advised by your doctor.
+     </p>
+<h3 id="subheads">5. Bronchiolitis</h3> <p class="para">Bronchiolitis is common in infants and young children during the cold and flu season. Your doctor may hear "wheezing" when your child breathes.
+        Bronchiolitis is most often caused by a virus, which does not require antibiotics.
+    </p>
+
+</div>
+</body>
+</html>

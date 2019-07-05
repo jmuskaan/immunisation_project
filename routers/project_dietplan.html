@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PaediaHealth-Generate a Diet Plan for yor child</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Code+Pro:700" rel="stylesheet">
+  <style>
+    body{
+	background-image: url("https://www.optimecare.com/wp-content/uploads/2016/06/medical-background.png");
+	padding: 3%;
+}
+
+h2{
+	font-family: Montserrat;
+	margin: auto;
+
+}
+.form-group{
+	font-family: Montserrat;
+}
+a:link {
+	font-size: 25px;
+	color: rgb(82, 82, 230); 
+	margin-left: 60px; 
+	font-family: Montserrat;
+  }
+  </style>
+  <script>
+    window.onload=function()
+{ 
+
+    var age=document.getElementById('exampleInputName2');
+    var wt=document.getElementById('exampleInputEmail2');
+    var btn=document.getElementById('generate');
+     
+     btn.onclick=function(){
+         var intage=parseInt(age.value);
+         var intwt=parseInt(wt.value);
+        if(intage <= 3)
+        {
+            if(intwt<4.7)
+             {
+                 console.log("Underweight");
+                 document.getElementById("anchor").setAttribute("href", "http://localhost:8800/diet1.html");
+
+             }
+             else if(intwt<6)
+             {
+                 console.log("Normal");
+                 document.getElementById("anchor").setAttribute("href","http://localhost:8800/diet2.html");
+
+             }
+             else
+             {
+                console.log("Overweight");
+                document.getElementById("anchor").setAttribute("href", "http://localhost:8800/diet3.html");
+
+            }
+        }
+        else if(intage <= 6)
+        {
+            if(intwt<6.2)
+            {
+                console.log("Underweight");
+                document.getElementById("anchor").setAttribute("href", "http://localhost:8800/diet1.html");
+
+            }
+             else if(intwt<7.8)
+             {
+                console.log("Normal");
+                document.getElementById("anchor").setAttribute("href", "http://localhost:8800/diet2.html");
+
+            }
+             else
+             {
+                 console.log("Overweight");
+                 document.getElementById("anchor").setAttribute("href", "http://localhost:8800/diet3.html");
+
+             }
+        }
+        else if(intage <= 9)
+        {
+            if(intwt<7.4)
+            {
+                console.log("Underweight");
+                document.getElementById("anchor").setAttribute("href", "http://localhost:8800/diet1.html");
+
+            }
+             else if(intwt<9.2)
+             {
+                console.log("Normal");
+                document.getElementById("anchor").setAttribute("href", "http://localhost:8800/diet2.html");
+
+            }
+             else
+             {
+                console.log("Overweight");
+                document.getElementById("anchor").setAttribute("href", "http://localhost:8800/diet3.html");
+
+            }
+        }
+        else if(intage <= 12)
+        {
+            if(intwt<8.3)
+            {
+                console.log("Underweight");
+                document.getElementById("anchor").setAttribute("href", "http://localhost:8800/diet1.html");
+
+            }
+             else if(intwt<10.2)
+             {
+                console.log("Normal");
+                document.getElementById("anchor").setAttribute("href", "http://localhost:8800/diet2.html");
+
+            }
+             else
+             {
+                console.log("Overweight");
+                document.getElementById("anchor").setAttribute("href", "http://localhost:8800/diet3.html");
+
+            }
+        }
+        return false;
+    }
+   
+}
+  </script>
+</head>
+<body>
+
+	<h2>Enter your child's details and generate a WHO approved diet plan</h2>
+	<br><br>
+
+	<form class="form-inline" id="age-wt">
+  <div class="form-group">
+    <label for="exampleInputName2"><b>Age</b></label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="in months">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2"><b>Weight</b></label>
+    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="in kg">
+  </div>
+  <button type="submit" class="btn btn-primary" id="generate">Generate diet plan </button>
+</form>
+<br>
+<a href="#" id="anchor" target="_blank">View diet plan for your child</a>
+<p id="disp"></p>
+</body>
+</html>
